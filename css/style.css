@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap");
+
+body {
+  font-family: "Quicksand", sans-serif;
+}
+
+/* Start Header  */
+
+/* Start Header Intro Section  */
+
+.headerintrocs {
+  height: 50px;
+  background-color: darkblue;
+  color: #ffff;
+
+  display: none;
+}
+
+.headerintrocs .introcs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 12px;
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  .visiblelgcs {
+    display: block;
+  }
+}
+
+/* End Header Intro Section  */
+
+/* Start Banner Section  */
+
+.carousel-item {
+  height: 60vh;
+}
+
+.bannercs1,
+.bannercs2,
+.bannercs3 {
+  background: url("../assets/images/banner/banner4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bannercs2 {
+  background: url("../assets/images/banner/banner5.jpg");
+}
+
+.bannercs3 {
+  background: url("../assets/images/banner/banner6.jpg");
+}
+
+/* End Banner Section  */
+
+/* End Header  */
