@@ -81,3 +81,17 @@ $(document).ready(() => {
   });
   // End Progress
 });
+
+// Start Info Section
+
+// Start ADV Section
+$("#videos").click(function () {
+  var getmodal = $(this).data("bs-target");
+  var getvideosrc = $(this).data("video");
+  var videoUrlAuto = getvideosrc + "?autoplay=1";
+
+  $(getmodal + " iframe").attr("src", videoUrlAuto);
+});
+// End ADV Section
+
+// End Info Section
