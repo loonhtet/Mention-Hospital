@@ -91,6 +91,14 @@ $("#videos").click(function () {
   var videoUrlAuto = getvideosrc + "?autoplay=1";
 
   $(getmodal + " iframe").attr("src", videoUrlAuto);
+
+  $(getmodal + " button.btn-close").click(function () {
+    $(getmodal + "iframe").attr("src", getvideosrc);
+  });
+
+  $(getmodal).click("hidden.bs.modal", function () {
+    $(getmodal + "iframe").attr("src", getvideosrc);
+  });
 });
 // End ADV Section
 
