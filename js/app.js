@@ -23,4 +23,40 @@ $(document).ready(() => {
   });
 
   //   End Info Section
+
+  // Start Premises Section
+  $("#lightslider").lightSlider({
+    auto: true,
+    pauseOnHover: true,
+    item: 4,
+    loop: true,
+    slideMove: 1,
+    speed: 600,
+  });
+  // End Premises Section
+
+  // Start Pricing Section
+  $(window).scroll(function () {
+    let getscroll = $(this).scrollTop();
+    console.log(getscroll);
+
+    if (getscroll >= 2442) {
+      $(".cardone").addClass("movelefts");
+      $(".cardtwo").addClass("movebottoms");
+      $(".cardthree").addClass("moverights");
+    } else {
+      $(".cardone").removeClass("movelefts");
+      $(".cardtwo").removeClass("movebottoms");
+      $(".cardthree").removeClass("moverights");
+    }
+  });
+  // End Pricing Section
 });
+
+// Start Join Us Section
+$("#accordion").accordion();
+// End Join Us Section
+
+// Start Footer Section
+$("#getyear").text(new Date().getUTCFullYear());
+// End Footer Section
